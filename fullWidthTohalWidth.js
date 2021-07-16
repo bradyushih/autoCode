@@ -10,6 +10,7 @@
 		alphMax 	: 'ｚ'.charCodeAt(0),
 	}
 	function FullWidth2HalWidth(str){
+		ccp.newHalWidth = '';
 		[...str].forEach( word => {
 			let charCode = word.charCodeAt(0);
 				switch (isFullWidth(charCode).type){
